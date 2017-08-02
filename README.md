@@ -21,4 +21,10 @@ Things you may want to cover:
 
 * Deployment instructions
 
+$ rails new library --database=postgresql --skip-turbolinks --skip-test-unit
+$ cd library
+$ rake db:create
+$ rails generate scaffold book author:string title:string
+$ rake db:migrate && rake db:rollback && rake db:migrate
+
 * ...
